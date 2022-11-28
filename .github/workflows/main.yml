@@ -22,6 +22,7 @@ jobs:
 
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag ramazanabiyev/getting-started
-        context: ./app
+        with:
+          context: ./app
       - name: Docker Push
         run: docker push ramazanabiyev/getting-started
