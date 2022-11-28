@@ -20,7 +20,7 @@ jobs:
           password: "node.js1234"
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag ${{ secrets.DOCKER_USERNAME }}/getting-started
+        run: docker build . --file Dockerfile --tag ramazanabiyev/getting-started
 
       - name: Docker Push
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/getting-started
+        run: docker push ramazanabiyev/getting-started
